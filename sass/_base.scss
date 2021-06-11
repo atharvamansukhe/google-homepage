@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% = 1rem = 10px
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: rgb(71, 64, 64);
+  font-weight: 300;
+  line-height: 1.6;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  align-content: center;
+
+  &__item {
+    margin: 1rem;
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: rgb(73, 68, 68);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+    margin: 0 1.2rem;
+  }
+
+  &__right {
+    margin-left: auto;
+    margin-right: 2rem;
+  }
+}
+
+#btn-signin {
+  display: block;
+  background-color: #1e88e5;
+  color: #fff;
+  font-weight: 400;
+  padding: 0.5rem 1.4rem;
+  text-decoration: none;
+  border-radius: 2px;
+  transform: translateY(-3px);
+
+  &:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  }
+}
